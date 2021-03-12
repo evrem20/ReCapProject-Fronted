@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Color } from 'src/app/models/color';
 
 @Component({
   selector: 'app-color',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorComponent implements OnInit {
 
-  constructor() { }
+  colors:Color[]=[];
+  dataLoaded=false;
+
+  constructor(private brandService:ColorService) { }
 
   ngOnInit(): void {
   }
