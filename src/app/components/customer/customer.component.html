@@ -9,14 +9,14 @@
 <table *ngIf="dataLoaded == true" class="table">
   <thead>
     <tr>
-        <th></th>
-      <th> Kullanıcı Adı</th>
+        <th>Id</th>
+      <th> Kullanıcı Adı Soyadı</th>
       <th>Şirket Adı</th>
     </tr>
   </thead>
   <tr *ngFor="let customer of customers">
     <td>{{ customer.id }}</td>
-    <td>{{ customer.userId }}</td>
+    <td>{{ customer.userName }}</td>
     <td>{{ customer.companyName }}</td>
   </tr>
 </table>

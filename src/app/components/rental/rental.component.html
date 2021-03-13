@@ -10,16 +10,18 @@
   <thead>
     <tr>
         <th>İd</th>
-        <th>Araba İd</th>
-      <th> Müşteri İd</th>
+        <th>Marka</th>
+      <th> Şirket</th>
+      <th> Kullanıcı Adı Soyadı</th>
       <th>Kiralama Tarihi </th>
-      <th>Verilme Tarihi </th>
+      <th>Teslim Tarihi </th>
     </tr>
   </thead>
   <tr *ngFor="let rental of rentals">
     <td>{{ rental.id }}</td>
-    <td>{{ rental.carId }}</td>
-    <td>{{ rental.customerId }}</td>
+    <td>{{ rental.brandName }}</td>
+    <td>{{ rental.companyName }}</td>
+    <td>{{ rental.userName }}</td>
     <td>{{ rental.rentDate }}</td>
     <td>{{ rental.returnDate }}</td>
   </tr>

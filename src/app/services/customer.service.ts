@@ -7,7 +7,7 @@ import { CustomerResponseModel } from '../models/customerResponseModel';
   providedIn: 'root'
 })
 export class CustomerService {
-  apiUrl='https://localhost:44304/api/customers/getall';
+  apiUrl='https://localhost:44304/api/customers/getcustomerdetails';
 
   constructor(private httpClient:HttpClient) { }
 

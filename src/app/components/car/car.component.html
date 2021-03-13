@@ -10,8 +10,8 @@
   <thead>
     <tr>
       <th>Id</th>
-      <th>Marka Id</th>
-      <th>Renk Id</th>
+      <th>Marka</th>
+      <th>Renk</th>
       <th>Araba İsmi</th>
       <th>Model Yılı</th>
       <th>Günlük Ücret</th>
@@ -19,7 +19,7 @@
     </tr>
   </thead>
   <tr *ngFor="let car of cars">
-    <td>{{ car.id }}</td>
+    <td>{{ car.carId }}</td>
     <td>{{ car.brandName }}</td>
     <td>{{ car.colorName }}</td>
     <td>{{ car.carName }}</td>
