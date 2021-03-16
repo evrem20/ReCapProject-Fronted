@@ -3,6 +3,6 @@ export interface Rental{
     brandName:string;
     companyName:string;
     userName:string;
-    rentDate:number;
-    returnDate:number;
+    rentDate:Date;
+    returnDate:Date;
 }

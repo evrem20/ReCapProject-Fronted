@@ -1,7 +1,7 @@
-export interface Car{
+export interface CarDetailDto{
     carId:number;
-    brandId:string;
-    colorId:string;
+    brandName:string;
+    colorName:string;
     carName:string;
     modelYear:number;
     dailyPrice:number;
