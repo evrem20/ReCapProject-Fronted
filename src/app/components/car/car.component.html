@@ -18,14 +18,17 @@
       <th>Açıklama</th>
     </tr>
   </thead>
-  <tr *ngFor="let carDetailDto of carDetailDtos"
-  >
-    <td>{{ carDetailDto.carId }}</td>
-    <td>{{ carDetailDto.brandName }}</td>
-    <td>{{ carDetailDto.colorName }}</td>
-    <td>{{ carDetailDto.carName }}</td>
-    <td>{{ carDetailDto.modelYear }}</td>
-    <td>{{ carDetailDto.dailyPrice }}</td>
-    <td>{{ carDetailDto.description }}</td>
-  </tr>
+  <tbody>
+    <tr routerLink="cars/cardetails/{{carDetailDto.carId}}"  *ngFor="let carDetailDto of carDetailDtos"
+    >
+      <td>{{ carDetailDto.carId }}</td>
+      <td>{{ carDetailDto.brandName }}</td>
+      <td>{{ carDetailDto.colorName }}</td>
+      <td>{{ carDetailDto.carName }}</td>
+      <td>{{ carDetailDto.modelYear }}</td>
+      <td>{{ carDetailDto.dailyPrice }}</td>
+      <td>{{ carDetailDto.description }}</td>
+    </tr>
+  </tbody>
+ 
 </table>
